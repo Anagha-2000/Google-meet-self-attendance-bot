@@ -1,2 +1,3 @@
 # Google-meet-self-attendance-bot
-google meet automatic attendance bot  joins a google meet link at a specific time in schedule and attends lecture on your behalf. Even marks Present through microphone when the Teacher takes your name.
+I have been missing my morning online lectures lately because of this irregular sleep cycle and procrastination. So I came up with this innovative idea of developing a python program which will automatically open the meet link for me and join the lecture using my account credentials.
+Moreover I added a versatile feature to this project which would make this project totally self-acting in handling the Google Meetings webpage. I have developed a program which will answer as “Present” through the Microphone of the laptop whenever the teacher takes your name. Pygame , selenium and chrome driver are used in this project. 
