@@ -90,20 +90,31 @@ while staleElement :
                     
         except(StaleElementReferenceException):
 
-            staleElement = True
-
-        except(NoSuchElementException) :
                 staleElement = True
 
+        except(NoSuchElementException) :
+                
+                staleElement = True
+
+        changed_numstudents = int(students.text)
+        print(changed_numstudents)
+        if changed_numstudents > Total_numStudents :
+                Total_numStudents = changed_numstudents
+        elif changed_numstudents < Total_numStudents :
+        
+                if changed_numstudents <= math.floor(0.2*Total_numStudents):  
+                                EndCall=driver.find_element_by_xpath("//*[@id='ow3']/div[1]/div/div[5]/div[3]/div[9]/div[2]/div[2]/div/span")
+                                EndCall.click()   
+                                
         if count ==0 :
 
-                 words = ("sarveshwadi" , "saraveshwadi" , "surveshwadi" ,"sureshwadi" , "sarveshvadi" , "saraveshvadi" , "surveshvadi" , "sureshvadi" , "sarvesh" , "saravesh" , "survesh" , "suresh" , "wadi" , "vadi")
+                 words = (“roll number 1”,“john” , “jon” , “jondoe” ,”jondo” , “jondove” , “johndoe” , “johndove” , “doe” , “dove”)
                  if any(name in Caption_text for name in words): 
 
                         UnMute = driver.find_element_by_xpath("//*[@id='ow3']/div[1]/div/div[5]/div[3]/div[9]/div[2]/div[1]/div/div/div")
                         UnMute.click()
                         mixer.init(devicename='CABLE Input (VB-Audio Virtual Cable)')
-                        mixer.music.load("D://movies/English/Present_mam.mp3")
+                        mixer.music.load("Path to recorded audio file")
                         mixer.music.play()
                         time.sleep(4)
                         mixer.music.stop()
