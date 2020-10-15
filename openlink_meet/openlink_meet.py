@@ -28,8 +28,7 @@ chrome_options.add_argument('use-fake-ui-for-media-stream')
 chrome_options.add_argument('--disable-notifications')
 driver = webdriver.Chrome("D://openlink_meet/chromedriver.exe",chrome_options=chrome_options)
 
-# URL of website 
-#url = "https://www.geeksforgeeks.org/"
+
 
 # Opening the website 
 driver.get(url) 
@@ -38,13 +37,13 @@ driver.get(url)
 SignIn = driver.find_element_by_id("identifierId") 
 
 # clicking on the button 
-SignIn.send_keys("sarvesh.wadi18@vit.edu")
+SignIn.send_keys("Enter email id here")
 SignIn.send_keys(Keys.ENTER)
 
 driver.implicitly_wait(10)
 
 EnterPass =driver.find_element_by_xpath("//*[@id='password']/div[1]/div/div[1]/input")
-EnterPass.send_keys("1618528491")
+EnterPass.send_keys("Enter password here")
 EnterPass.send_keys(Keys.ENTER)
 
 JoinLink =driver.find_element_by_xpath("//*[@id='yDmH0d']/c-wiz/div/div/div/div[2]/div[2]/div[2]/div/c-wiz/div[1]/div/div/div[1]") 
