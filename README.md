@@ -6,3 +6,8 @@ To run the program just clone the project change/add paths to chrome driver,add 
 of openlink.py file to the batch file.And run batch file.
 here is the tutorial link for this project :https://wadisarvesh33.medium.com/google-meet-attendance-bot-sarvesh-wadi-d8dd02838ee3
 Refer this tutorial if you have any doubts/errors with the project.
+
+Please like and share my post on LinkedIn
+LinkedIn link :
+
+https://www.linkedin.com/posts/sarvesh-wadi-546531186_programming-python-coding-activity-6721649520037371904-FhGh
